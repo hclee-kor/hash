@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    text-align: center;
+    color: #2c3e50;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.drop-zone {
+    border: 2px dashed #3498db;
+    border-radius: 8px;
+    padding: 50px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #f9fbfd;
+    margin: 30px 0;
+}
+
+.drop-zone.dragover {
+    background-color: #e1f0fa;
+    border-color: #2980b9;
+}
+
+#drop-zone-text {
+    color: #34495e;
+    font-size: 16px;
+    pointer-events: none;
+    line-height: 1.5;
+}
+
+.result-area {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.result-area h2 {
+    font-size: 18px;
+    margin-top: 0;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 10px;
+    color: #2c3e50;
+}
+
+.result-area p {
+    word-break: break-all;
+    margin: 12px 0;
+    font-size: 15px;
+    text-align: left;
+    color: #333;
+}
+
+/* 목록에 있을 경우 강조하는 스타일 */
+.highlight-remark {
+    color: #e74c3c;
+    font-weight: bold;
+}
+/* 목록에 없을 경우 평범한 스타일 */
+.normal-remark {
+    color: #7f8c8d;
+}
